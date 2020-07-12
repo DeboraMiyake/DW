@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos</title>
+	<meta charset="utf-8">
+    <script type="text/javascript">
+    /**MOUSE**/
+
+	//onclick; ondblclick; onmousedown; onmouseover; onmouseout
+
+    /**TECLADO**/
+    //onkeydown; onkeypress; onkeyup
+
+    /**JANELA**/
+    //onload; onresize
+
+    /**Formularios**/
+    //onfocus; onblur; onchange
+
+    function mensagem(){
+        alert('Voce apertou aqui!!')
+    }
+	</script>
+</head>
+<body onload="alert('A pagina foi totalmente carregada');">
+    <div onclick ="mensagem()" style="background:#CCC; height: 150px; width:150px"></div>
+
+    <input onkeypress= "alert('Uma tecla foi pressionada!')" type="text")>
+    <br>
+    <input onfocus= "alert('O elemento foi focado')" type="text")>
+    
+</body>
+</html>

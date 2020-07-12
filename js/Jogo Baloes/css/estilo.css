@@ -1,0 +1,82 @@
+body{
+    background-color: #e2fff6
+}
+
+.bordinha{
+    margin: 0 auto;
+    display: table;
+    padding: 100px;
+    width: 200px;
+    height: 200px;
+    background: #95eaff;
+    padding: 70px;
+    border-radius: 80px 20px;
+    box-shadow: 20px 16px #00dfdf;
+    margin-top: 100px;
+}
+
+.painelNivel{
+    margin: 0 auto;
+    display: table;
+}
+
+fieldset{
+    color:#4e5557;
+}
+
+select{
+    font-size: 20px;
+    width:180px;
+}
+
+.iniciar{
+    width: 65px;
+    float: right;
+}
+
+legend{
+    color:#000;
+    font-size: 20px;
+}
+
+.painel{
+    float:left;
+    width:auto;
+    height:500px;
+    background: #FFF; 
+    border: solid 1px #A2A2A2; 
+    margin-right: 5px;
+    
+}
+
+#cenario{
+    width: 750px;
+    height: 500px; 
+    background: url('../imagens/cenario.png'); 
+    border: 1px solid;
+    background-position: bottom;
+}
+
+.container{
+    width: 30%;
+    margin:0 auto;
+    display: table;
+    margin-top: 100px;
+}
+
+#baloesInteiros{
+    font-size: 40px;
+}
+
+#baloesEstourados{
+    font-size: 40px;
+}
+
+.timer{
+    background: url('../imagens/cronometro.png'); 
+    text-align: center;
+}
+#cronometro{
+    color: #d60505;
+    font-size: 30px;
+}

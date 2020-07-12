@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Estourando balões</title>
+		<link rel="stylesheet" href="css/estilo.css" >
+		<script src="js/jogo.js"></script>
+
+	</head>
+
+	<body onload="iniciaJogo()">
+		<div class= "container"> 
+			<div class= "painel"> 
+				<table border="0">
+					<tr>
+						<td>
+							<img src="imagens/balao_azul_grande.png" />
+						</td>
+						<td>
+							<span id="baloesInteiros"></span>
+						</td>
+					</tr>
+				</table>
+
+				<br />
+				<table border="0">
+					<tr>
+						<td>
+							<img src="imagens/balao_azul_grande_estourado.png" />
+						</td>
+						<td>
+							<span id="baloesEstourados"></span>
+						</td>
+					</tr>
+				</table>
+
+				<br/>
+				<table border="0" style="width: 140px; height: 132px;">
+					<tr>
+						<td class="timer"> 
+							<span id="cronometro"></span>
+						</td>
+					</tr>
+				</table>
+
+				<table border="0" >
+					<tr>
+						<td>
+							<a href="index.html"><img src="imagens/reiniciar.png" width="50px"/></a> 
+						</td>
+					</tr>
+					</table>
+			</div>
+			<div id="cenario" >
+			</div>
+		</div>
+	</body>
+	
+</html>
