@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        /**MOUSE**/
+        $(document).ready( //ready verifica o dom está carregado
+            function(){
+                $('#div1').click(
+                    function(){
+                        alert('Elemento foi clicado');
+                    });
+            }
+        );
+
+        /**TECLADO**/
+        $(document).ready( 
+            function(){
+                $('#campo').keydown(
+                    function(){
+                        alert('Botão foi pressionado');
+                    });
+            }
+        );
+
+        /**Formularios**/
+        $(document).ready( 
+            function(){
+                $('.seletor').change(
+                    function(){
+                        alert('Nova opção selecionada');
+                    });
+            }
+        );
+        
+    </script>
+</head>
+<body>
+    <div id="div1" style="height: 150px; width:150px;background: #CCC">
+    </div>
+    
+    <br><hr>
+    <input id="campo" type="text">
+
+    <br><hr>
+    <select class="seletor">
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+    </select>
+</body>
+</html>

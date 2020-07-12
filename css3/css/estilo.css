@@ -1,0 +1,90 @@
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+#box{
+    width: 300px;
+    height: 300px;
+    padding: 70px;
+    border-radius: 20px 80px;
+    margin: 0 auto;
+    background: url("../img/a.jpg");
+   /* -webkit-border-radius: 20px;
+    -moz-border-radius:20px;*/
+}
+
+#box h1, p{
+    color: #fff;
+    padding:15px;
+    text-align: justify;
+}
+
+#box2{
+    width: 300px;
+    height: 300px;
+    background: #f1dacd;
+    padding: 70px;
+    margin: 0 auto;
+    border-radius: 80px 20px;
+    box-shadow: 20px 16px #f1bea0;
+}
+
+#box2 h1{
+    color: #fff;
+    padding:15px;
+    text-align: justify;
+    font-size: 60px;
+    text-shadow: -10px 10px 3px black;
+     /* SOBRE O TEXT-SHADOW
+        negativo a esquerda
+        positivo a direita
+        primeiro valor -- horizontal
+        segundo valor -- vertical
+        terceiro valor -- blur
+     */
+}
+#box2 p{
+    color: rgb(0, 0, 0);
+}
+
+@keyframes animacao-box{
+    from{
+        background: rgb(148, 19, 51);
+        border-radius: 0px;
+        top:0;
+        left:0;
+    }
+    to{
+        background: rgb(155, 46, 73);
+        border-radius: 300px;
+        top:200px;
+        left:200px;
+    }
+}
+
+#box-animacao{
+    width: 300px;
+    height: 300px;
+    background: rgb(155, 46, 73);
+    margin: 0 auto;
+    position: relative;
+    /*animation-name: animacao-box;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;*/
+
+    animation: animacao-box 5s 3s 2 alternate;
+}
+
+#box-transicao{
+    width: 300px;
+    height: 300px;
+    background: rgb(52, 168, 189);
+}
+
+#box-transicao:hover{
+    width:400px;
+    background: rgb(35, 173, 150);
+    transition: all 2s;
+}

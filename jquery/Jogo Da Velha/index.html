@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="js/jogo.js"></script>
+		<link rel="stylesheet" href="css/estilo.css">
+	</head>
+	<body>
+		<div id="paginaInicial">
+			<table class="tabela">
+				<tbody>
+					<tr>
+						<td colspan="3" class="titulo">Jogo da Velha</td>
+					</tr>
+
+					<tr>
+						<td>
+							<img src="imagens/jogador_1.png">
+							<br>
+							<input id="entradaJogador1" type="text" maxlength="10" placeholder="Apelido Jogador 1">
+						</td>
+
+						<td>
+							<img id="iniciar" src="imagens/iniciar.png" class="play">
+						</td>
+						<td>
+							<img src="imagens/jogador_2.png">
+							<br>
+							<input id="entradaJogador2" type="text" maxlength="10" placeholder="Apelido Jogador 2">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="palcoJogo">
+			<div class="palco">
+				<img src="imagens/jogador_1.png">
+				<br>
+				<span id="nomeJogador1"></span>
+			</div>
+
+			<div class="palco">
+				<table>
+					<tr>
+						<td class="grid">
+							<div class="quadrado" id="a1"></div>
+						</td>
+						<td class="grid">
+							<div class="quadrado" id="a2"></div>
+						</td>
+						<td class="grid2">
+							<div class="quadrado" id="a3"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="grid">
+							<div class="quadrado" id="b1"></div>
+						</td>
+						<td class="grid">
+							<div class="quadrado" id="b2"></div>
+						</td>
+						<td class="grid2">
+							<div class="quadrado" id="b3"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="grid3">
+							<div class="quadrado" id="c1"></div>
+						</td>
+						<td class="grid3">
+							<div class="quadrado" id="c2"></div>
+						</td>
+						<td>
+							<div class="quadrado" id="c3"></div>
+						</td>
+					</tr>
+					
+
+				</table>
+			</div>
+
+			<div class="palco">
+				<img src="imagens/jogador_2.png">
+				<br>
+				<span id="nomeJogador2"></span>
+			</div>
+
+
+		</div>
+	</body>
+</html>

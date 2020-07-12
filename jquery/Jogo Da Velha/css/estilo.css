@@ -1,0 +1,63 @@
+body{
+    background-color: #fcebcb;
+}
+.tabela{
+    margin: 0 auto;
+    width: 600px;  
+}
+
+.tabela img{
+   padding: 30px;
+}
+
+.titulo{
+    font-size: 30px;
+    text-align: center;
+    font-family: georgia;
+}
+
+.titulo:hover{
+    color: #ff7e05;
+    cursor: pointer;
+}
+
+.tabela input{
+    padding: 10px;
+    margin: 0 auto;
+    display: table;
+ }
+
+#paginaInicial{
+    width: 100%;
+    margin:0 auto;
+    display: table;
+}
+
+.palco{
+    display: inline-block;
+}
+
+#palcoJogo{
+    text-align: center;
+    margin-top: 50px;
+    display:none;
+}
+
+.quadrado{
+    width:100px;
+    height:100px;
+}
+
+.grid{
+    border-bottom: solid 1px red; 
+    border-right: solid 1px red;
+}
+
+.grid2{
+    border-bottom: solid 1px red; 
+}
+
+.grid3{
+    border-right: solid 1px red;
+}
+
