@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Calculadora PHP</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form method="post" action="calcular.php">
+	
+		<label>
+			Primeiro número:
+			<input type="text" name="numero1">
+		</label>
+
+		<label>
+			Segundo número:
+			<input type="text" name="numero2">
+		</label><br>
+
+		Operação:<br>
+
+		<label>
+		<input type="radio" name="operacao" value="somar">
+				Somar
+		</label>
+
+		<input type="radio" name="operacao" value="subtrair">
+				Subtrair
+		</label>
+
+		<input type="radio" name="operacao" value="multiplicar">
+				Multiplicar
+		</label>
+
+		<input type="radio" name="operacao" value="dividir">
+				Dividir
+		</label>
+
+		<br/><br/>
+		<input type="submit" value="Somar">
+
+	</form>
+</body>
+</html>
