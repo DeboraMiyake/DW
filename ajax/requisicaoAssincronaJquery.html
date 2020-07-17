@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ajax facil com Jquery</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(
+                function(){
+                    $('.carregaConteudo').click(
+                        function(){
+                            var carregaUrl = this.id;
+                            carregaUrl = carregaUrl+'_conteudo.html';
+                            $.ajax({
+                                url: carregaUrl,
+                            
+                                success: function(data){
+                                    $('#conteudo').html(data);
+                                },
+
+                                beforeSend: function(){
+                                    $('#loader').css({display:"block"});
+                                },
+
+                                complete: function(){
+                                    $('#loader').css({display:"none"});
+                                }
+                            });
+                        }                   
+                    );
+                }
+            );
+        </script>
+	</head>
+
+	<body>
+
+	    <nav class="navbar navbar-default navbar-static-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	        	<h3>Requisições síncronas e assíncronas</h3>
+	        </div>
+	      </div>
+	    </nav>
+
+
+	    <div class="container">
+
+	    	<div class="row">
+	    		<div class="col-md-4 center"></div>
+	    		<div class="col-md-4 center">
+	    			<a href="#" class="btn btn-primary carregaConteudo" id="pagina_1">Página 1</a>
+	    			<a href="#" class="btn btn-primary carregaConteudo" id="pagina_2">Página 2</a>
+	    			<a href="#" class="btn btn-primary carregaConteudo" id="pagina_3">Página 3</a>
+	    		</div>
+	    		<div class="col-md-4 center"></div>
+	    	</div>
+	    	
+	    	<br />
+	    	<div class="row">
+		    	<div class="col-md-1"></div>
+
+                <div class="col-md-10" id="conteudo">
+                    <img id="loader" src='loader.gif' style="display: none">
+                </div>
+		    		
+				<div class="col-md-1"></div>
+			</div>
+
+		</div>	
+	</body>
+</html>
